@@ -34,8 +34,7 @@ class ServersCoreData: ServersStoreProtocol{
     
     // MARK: - CRUD operations
     
-    func fetchServers(completionHandler: @escaping (() throws -> [Server]) -> Void)
-    {
+    func fetchServers(completionHandler: @escaping (() throws -> [Server]) -> Void){
       privateManagedObjectContext.perform {
         do {
           let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "ManagedServer")
@@ -48,8 +47,7 @@ class ServersCoreData: ServersStoreProtocol{
       }
     }
     
-    func createServer(serverToCreate: Server, completionHandler: @escaping (() throws -> Server?) -> Void)
-    {
+    func createServer(serverToCreate: Server, completionHandler: @escaping (() throws -> Server?) -> Void){
       privateManagedObjectContext.perform {
         do {
           let managedServer = NSEntityDescription.insertNewObject(forEntityName: "ManagedServer", into: self.privateManagedObjectContext) as! ManagedServer
@@ -63,8 +61,7 @@ class ServersCoreData: ServersStoreProtocol{
       }
     }
     
-    func deleteServer(serverToDelete: Server, completionHandler: @escaping (() throws -> Server?) -> Void)
-    {
+    func deleteServer(serverToDelete: Server, completionHandler: @escaping (() throws -> Server?) -> Void){
       privateManagedObjectContext.perform {
         do {
           let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "ManagedServer")

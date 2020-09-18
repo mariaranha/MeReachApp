@@ -12,20 +12,17 @@
 
 import UIKit
 
-@objc protocol ListServersRoutingLogic
-{
+@objc protocol ListServersRoutingLogic {
     func routeToAddServer(segue: UIStoryboardSegue?)
 }
 
-protocol ListServersDataPassing
-{
-  var dataStore: ListServersDataStore? { get }
+protocol ListServersDataPassing {
+   var dataStore: ListServersDataStore? { get }
 }
 
-class ListServersRouter: NSObject, ListServersRoutingLogic, ListServersDataPassing
-{
-  weak var viewController: ListServersViewController?
-  var dataStore: ListServersDataStore?
+class ListServersRouter: NSObject, ListServersRoutingLogic, ListServersDataPassing {
+   weak var viewController: ListServersViewController?
+   var dataStore: ListServersDataStore?
   
     // MARK: Routing
     
@@ -45,15 +42,14 @@ class ListServersRouter: NSObject, ListServersRoutingLogic, ListServersDataPassi
     
     // MARK: Navigation
     
-    func navigateToAddServer(source: ListServersViewController, destination: AddServerViewController)
-    {
-      source.show(destination, sender: nil)
+    func navigateToAddServer(source: ListServersViewController, destination: AddServerViewController) {
+       source.show(destination, sender: nil)
     }
     
     // MARK: Passing data
     
-    func passDataToAddServer(source: ListServersDataStore, destination: inout AddServerDataStore)
-    {
+    func passDataToAddServer(source: ListServersDataStore, destination: inout AddServerDataStore){
+        
     }
     
 }
