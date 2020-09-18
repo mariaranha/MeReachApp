@@ -1,0 +1,751 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9C00F34E2511A20300EA6770 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C00F34D2511A20300EA6770 /* AppDelegate.swift */; };
+		9C00F3502511A20300EA6770 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C00F34F2511A20300EA6770 /* SceneDelegate.swift */; };
+		9C00F3552511A20300EA6770 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C00F3532511A20300EA6770 /* Main.storyboard */; };
+		9C00F3582511A20300EA6770 /* MeReachApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9C00F3562511A20300EA6770 /* MeReachApp.xcdatamodeld */; };
+		9C00F35A2511A20400EA6770 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C00F3592511A20400EA6770 /* Assets.xcassets */; };
+		9C00F35D2511A20400EA6770 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C00F35B2511A20400EA6770 /* LaunchScreen.storyboard */; };
+		9C00F3682511A20400EA6770 /* MeReachAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C00F3672511A20400EA6770 /* MeReachAppTests.swift */; };
+		9C00F3732511A20500EA6770 /* MeReachAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C00F3722511A20500EA6770 /* MeReachAppUITests.swift */; };
+		9C00F3882511A28C00EA6770 /* ListServersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C00F3822511A28C00EA6770 /* ListServersPresenter.swift */; };
+		9C00F3892511A28C00EA6770 /* ListServersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C00F3822511A28C00EA6770 /* ListServersPresenter.swift */; };
+		9C00F38A2511A28C00EA6770 /* ListServersWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C00F3832511A28C00EA6770 /* ListServersWorker.swift */; };
+		9C00F38B2511A28C00EA6770 /* ListServersWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C00F3832511A28C00EA6770 /* ListServersWorker.swift */; };
+		9C00F38C2511A28C00EA6770 /* ListServersRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C00F3842511A28C00EA6770 /* ListServersRouter.swift */; };
+		9C00F38D2511A28C00EA6770 /* ListServersRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C00F3842511A28C00EA6770 /* ListServersRouter.swift */; };
+		9C00F38E2511A28C00EA6770 /* ListServersModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C00F3852511A28C00EA6770 /* ListServersModels.swift */; };
+		9C00F38F2511A28C00EA6770 /* ListServersModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C00F3852511A28C00EA6770 /* ListServersModels.swift */; };
+		9C00F3902511A28C00EA6770 /* ListServersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C00F3862511A28C00EA6770 /* ListServersViewController.swift */; };
+		9C00F3912511A28C00EA6770 /* ListServersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C00F3862511A28C00EA6770 /* ListServersViewController.swift */; };
+		9C00F3922511A28C00EA6770 /* ListServersInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C00F3872511A28C00EA6770 /* ListServersInteractor.swift */; };
+		9C00F3932511A28C00EA6770 /* ListServersInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C00F3872511A28C00EA6770 /* ListServersInteractor.swift */; };
+		9C44F3F12514C68C008A4F0F /* ServersCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C44F3F02514C68C008A4F0F /* ServersCoreData.swift */; };
+		9C44F3F42515078C008A4F0F /* ManagedServer+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C44F3F22515078C008A4F0F /* ManagedServer+CoreDataClass.swift */; };
+		9C44F3F52515078C008A4F0F /* ManagedServer+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C44F3F32515078C008A4F0F /* ManagedServer+CoreDataProperties.swift */; };
+		9C56853E2512FA9200B10E29 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C56853D2512FA9200B10E29 /* Server.swift */; };
+		9C7507B1251391E1003C34D6 /* ServersWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7507B0251391E1003C34D6 /* ServersWorker.swift */; };
+		9C7507B92513CA2F003C34D6 /* AddServerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7507B32513CA2F003C34D6 /* AddServerPresenter.swift */; };
+		9C7507BA2513CA2F003C34D6 /* AddServerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7507B32513CA2F003C34D6 /* AddServerPresenter.swift */; };
+		9C7507BB2513CA2F003C34D6 /* AddServerWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7507B42513CA2F003C34D6 /* AddServerWorker.swift */; };
+		9C7507BC2513CA2F003C34D6 /* AddServerWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7507B42513CA2F003C34D6 /* AddServerWorker.swift */; };
+		9C7507BD2513CA2F003C34D6 /* AddServerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7507B52513CA2F003C34D6 /* AddServerRouter.swift */; };
+		9C7507BE2513CA2F003C34D6 /* AddServerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7507B52513CA2F003C34D6 /* AddServerRouter.swift */; };
+		9C7507BF2513CA2F003C34D6 /* AddServerModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7507B62513CA2F003C34D6 /* AddServerModels.swift */; };
+		9C7507C02513CA2F003C34D6 /* AddServerModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7507B62513CA2F003C34D6 /* AddServerModels.swift */; };
+		9C7507C12513CA2F003C34D6 /* AddServerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7507B72513CA2F003C34D6 /* AddServerViewController.swift */; };
+		9C7507C22513CA2F003C34D6 /* AddServerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7507B72513CA2F003C34D6 /* AddServerViewController.swift */; };
+		9C7507C32513CA2F003C34D6 /* AddServerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7507B82513CA2F003C34D6 /* AddServerInteractor.swift */; };
+		9C7507C42513CA2F003C34D6 /* AddServerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7507B82513CA2F003C34D6 /* AddServerInteractor.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9C00F3642511A20400EA6770 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C00F3422511A20300EA6770 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C00F3492511A20300EA6770;
+			remoteInfo = MeReachApp;
+		};
+		9C00F36F2511A20500EA6770 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C00F3422511A20300EA6770 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C00F3492511A20300EA6770;
+			remoteInfo = MeReachApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9C00F34A2511A20300EA6770 /* MeReachApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeReachApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C00F34D2511A20300EA6770 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9C00F34F2511A20300EA6770 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9C00F3542511A20300EA6770 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9C00F3572511A20300EA6770 /* MeReachApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MeReachApp.xcdatamodel; sourceTree = "<group>"; };
+		9C00F3592511A20400EA6770 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9C00F35C2511A20400EA6770 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9C00F35E2511A20400EA6770 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C00F3632511A20400EA6770 /* MeReachAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeReachAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C00F3672511A20400EA6770 /* MeReachAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeReachAppTests.swift; sourceTree = "<group>"; };
+		9C00F3692511A20400EA6770 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C00F36E2511A20400EA6770 /* MeReachAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeReachAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C00F3722511A20500EA6770 /* MeReachAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeReachAppUITests.swift; sourceTree = "<group>"; };
+		9C00F3742511A20500EA6770 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C00F3822511A28C00EA6770 /* ListServersPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListServersPresenter.swift; sourceTree = "<group>"; };
+		9C00F3832511A28C00EA6770 /* ListServersWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListServersWorker.swift; sourceTree = "<group>"; };
+		9C00F3842511A28C00EA6770 /* ListServersRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListServersRouter.swift; sourceTree = "<group>"; };
+		9C00F3852511A28C00EA6770 /* ListServersModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListServersModels.swift; sourceTree = "<group>"; };
+		9C00F3862511A28C00EA6770 /* ListServersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListServersViewController.swift; sourceTree = "<group>"; };
+		9C00F3872511A28C00EA6770 /* ListServersInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListServersInteractor.swift; sourceTree = "<group>"; };
+		9C44F3F02514C68C008A4F0F /* ServersCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServersCoreData.swift; sourceTree = "<group>"; };
+		9C44F3F22515078C008A4F0F /* ManagedServer+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ManagedServer+CoreDataClass.swift"; sourceTree = "<group>"; };
+		9C44F3F32515078C008A4F0F /* ManagedServer+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ManagedServer+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9C56853D2512FA9200B10E29 /* Server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
+		9C7507B0251391E1003C34D6 /* ServersWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServersWorker.swift; sourceTree = "<group>"; };
+		9C7507B32513CA2F003C34D6 /* AddServerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddServerPresenter.swift; sourceTree = "<group>"; };
+		9C7507B42513CA2F003C34D6 /* AddServerWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddServerWorker.swift; sourceTree = "<group>"; };
+		9C7507B52513CA2F003C34D6 /* AddServerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddServerRouter.swift; sourceTree = "<group>"; };
+		9C7507B62513CA2F003C34D6 /* AddServerModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddServerModels.swift; sourceTree = "<group>"; };
+		9C7507B72513CA2F003C34D6 /* AddServerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddServerViewController.swift; sourceTree = "<group>"; };
+		9C7507B82513CA2F003C34D6 /* AddServerInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddServerInteractor.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9C00F3472511A20300EA6770 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C00F3602511A20400EA6770 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C00F36B2511A20400EA6770 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9C00F3412511A20300EA6770 = {
+			isa = PBXGroup;
+			children = (
+				9C00F34C2511A20300EA6770 /* MeReachApp */,
+				9C00F3662511A20400EA6770 /* MeReachAppTests */,
+				9C00F3712511A20500EA6770 /* MeReachAppUITests */,
+				9C00F34B2511A20300EA6770 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9C00F34B2511A20300EA6770 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9C00F34A2511A20300EA6770 /* MeReachApp.app */,
+				9C00F3632511A20400EA6770 /* MeReachAppTests.xctest */,
+				9C00F36E2511A20400EA6770 /* MeReachAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9C00F34C2511A20300EA6770 /* MeReachApp */ = {
+			isa = PBXGroup;
+			children = (
+				9C7507AF251391CC003C34D6 /* Workers */,
+				9C56853C2512FA7C00B10E29 /* Models */,
+				9C7507AC25138AC0003C34D6 /* Services */,
+				9C00F3802511A21700EA6770 /* Scenes */,
+				9C00F34D2511A20300EA6770 /* AppDelegate.swift */,
+				9C00F34F2511A20300EA6770 /* SceneDelegate.swift */,
+				9C00F3532511A20300EA6770 /* Main.storyboard */,
+				9C00F3592511A20400EA6770 /* Assets.xcassets */,
+				9C00F35B2511A20400EA6770 /* LaunchScreen.storyboard */,
+				9C00F35E2511A20400EA6770 /* Info.plist */,
+				9C00F3562511A20300EA6770 /* MeReachApp.xcdatamodeld */,
+			);
+			path = MeReachApp;
+			sourceTree = "<group>";
+		};
+		9C00F3662511A20400EA6770 /* MeReachAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				9C00F3672511A20400EA6770 /* MeReachAppTests.swift */,
+				9C00F3692511A20400EA6770 /* Info.plist */,
+			);
+			path = MeReachAppTests;
+			sourceTree = "<group>";
+		};
+		9C00F3712511A20500EA6770 /* MeReachAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9C00F3722511A20500EA6770 /* MeReachAppUITests.swift */,
+				9C00F3742511A20500EA6770 /* Info.plist */,
+			);
+			path = MeReachAppUITests;
+			sourceTree = "<group>";
+		};
+		9C00F3802511A21700EA6770 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				9C7507B22513C9F5003C34D6 /* AddServer */,
+				9C00F3812511A21D00EA6770 /* ListServers */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		9C00F3812511A21D00EA6770 /* ListServers */ = {
+			isa = PBXGroup;
+			children = (
+				9C00F3822511A28C00EA6770 /* ListServersPresenter.swift */,
+				9C00F3832511A28C00EA6770 /* ListServersWorker.swift */,
+				9C00F3842511A28C00EA6770 /* ListServersRouter.swift */,
+				9C00F3852511A28C00EA6770 /* ListServersModels.swift */,
+				9C00F3862511A28C00EA6770 /* ListServersViewController.swift */,
+				9C00F3872511A28C00EA6770 /* ListServersInteractor.swift */,
+			);
+			path = ListServers;
+			sourceTree = "<group>";
+		};
+		9C56853C2512FA7C00B10E29 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9C56853D2512FA9200B10E29 /* Server.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9C7507AC25138AC0003C34D6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9C44F3F02514C68C008A4F0F /* ServersCoreData.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		9C7507AF251391CC003C34D6 /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				9C44F3F22515078C008A4F0F /* ManagedServer+CoreDataClass.swift */,
+				9C44F3F32515078C008A4F0F /* ManagedServer+CoreDataProperties.swift */,
+				9C7507B0251391E1003C34D6 /* ServersWorker.swift */,
+			);
+			path = Workers;
+			sourceTree = "<group>";
+		};
+		9C7507B22513C9F5003C34D6 /* AddServer */ = {
+			isa = PBXGroup;
+			children = (
+				9C7507B32513CA2F003C34D6 /* AddServerPresenter.swift */,
+				9C7507B42513CA2F003C34D6 /* AddServerWorker.swift */,
+				9C7507B52513CA2F003C34D6 /* AddServerRouter.swift */,
+				9C7507B62513CA2F003C34D6 /* AddServerModels.swift */,
+				9C7507B72513CA2F003C34D6 /* AddServerViewController.swift */,
+				9C7507B82513CA2F003C34D6 /* AddServerInteractor.swift */,
+			);
+			path = AddServer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9C00F3492511A20300EA6770 /* MeReachApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C00F3772511A20500EA6770 /* Build configuration list for PBXNativeTarget "MeReachApp" */;
+			buildPhases = (
+				9C00F3462511A20300EA6770 /* Sources */,
+				9C00F3472511A20300EA6770 /* Frameworks */,
+				9C00F3482511A20300EA6770 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MeReachApp;
+			productName = MeReachApp;
+			productReference = 9C00F34A2511A20300EA6770 /* MeReachApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9C00F3622511A20400EA6770 /* MeReachAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C00F37A2511A20500EA6770 /* Build configuration list for PBXNativeTarget "MeReachAppTests" */;
+			buildPhases = (
+				9C00F35F2511A20400EA6770 /* Sources */,
+				9C00F3602511A20400EA6770 /* Frameworks */,
+				9C00F3612511A20400EA6770 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9C00F3652511A20400EA6770 /* PBXTargetDependency */,
+			);
+			name = MeReachAppTests;
+			productName = MeReachAppTests;
+			productReference = 9C00F3632511A20400EA6770 /* MeReachAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9C00F36D2511A20400EA6770 /* MeReachAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C00F37D2511A20500EA6770 /* Build configuration list for PBXNativeTarget "MeReachAppUITests" */;
+			buildPhases = (
+				9C00F36A2511A20400EA6770 /* Sources */,
+				9C00F36B2511A20400EA6770 /* Frameworks */,
+				9C00F36C2511A20400EA6770 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9C00F3702511A20500EA6770 /* PBXTargetDependency */,
+			);
+			name = MeReachAppUITests;
+			productName = MeReachAppUITests;
+			productReference = 9C00F36E2511A20400EA6770 /* MeReachAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9C00F3422511A20300EA6770 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					9C00F3492511A20300EA6770 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					9C00F3622511A20400EA6770 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 9C00F3492511A20300EA6770;
+					};
+					9C00F36D2511A20400EA6770 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 9C00F3492511A20300EA6770;
+					};
+				};
+			};
+			buildConfigurationList = 9C00F3452511A20300EA6770 /* Build configuration list for PBXProject "MeReachApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9C00F3412511A20300EA6770;
+			productRefGroup = 9C00F34B2511A20300EA6770 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9C00F3492511A20300EA6770 /* MeReachApp */,
+				9C00F3622511A20400EA6770 /* MeReachAppTests */,
+				9C00F36D2511A20400EA6770 /* MeReachAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9C00F3482511A20300EA6770 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C00F35D2511A20400EA6770 /* LaunchScreen.storyboard in Resources */,
+				9C00F35A2511A20400EA6770 /* Assets.xcassets in Resources */,
+				9C00F3552511A20300EA6770 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C00F3612511A20400EA6770 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C00F36C2511A20400EA6770 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9C00F3462511A20300EA6770 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C7507B1251391E1003C34D6 /* ServersWorker.swift in Sources */,
+				9C00F3922511A28C00EA6770 /* ListServersInteractor.swift in Sources */,
+				9C44F3F42515078C008A4F0F /* ManagedServer+CoreDataClass.swift in Sources */,
+				9C44F3F12514C68C008A4F0F /* ServersCoreData.swift in Sources */,
+				9C7507B92513CA2F003C34D6 /* AddServerPresenter.swift in Sources */,
+				9C00F3902511A28C00EA6770 /* ListServersViewController.swift in Sources */,
+				9C7507BF2513CA2F003C34D6 /* AddServerModels.swift in Sources */,
+				9C00F38C2511A28C00EA6770 /* ListServersRouter.swift in Sources */,
+				9C00F3582511A20300EA6770 /* MeReachApp.xcdatamodeld in Sources */,
+				9C7507BD2513CA2F003C34D6 /* AddServerRouter.swift in Sources */,
+				9C00F34E2511A20300EA6770 /* AppDelegate.swift in Sources */,
+				9C7507BB2513CA2F003C34D6 /* AddServerWorker.swift in Sources */,
+				9C7507C12513CA2F003C34D6 /* AddServerViewController.swift in Sources */,
+				9C56853E2512FA9200B10E29 /* Server.swift in Sources */,
+				9C7507C32513CA2F003C34D6 /* AddServerInteractor.swift in Sources */,
+				9C00F38E2511A28C00EA6770 /* ListServersModels.swift in Sources */,
+				9C44F3F52515078C008A4F0F /* ManagedServer+CoreDataProperties.swift in Sources */,
+				9C00F3502511A20300EA6770 /* SceneDelegate.swift in Sources */,
+				9C00F38A2511A28C00EA6770 /* ListServersWorker.swift in Sources */,
+				9C00F3882511A28C00EA6770 /* ListServersPresenter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C00F35F2511A20400EA6770 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C00F3932511A28C00EA6770 /* ListServersInteractor.swift in Sources */,
+				9C7507C02513CA2F003C34D6 /* AddServerModels.swift in Sources */,
+				9C00F3682511A20400EA6770 /* MeReachAppTests.swift in Sources */,
+				9C7507C22513CA2F003C34D6 /* AddServerViewController.swift in Sources */,
+				9C00F3912511A28C00EA6770 /* ListServersViewController.swift in Sources */,
+				9C7507BA2513CA2F003C34D6 /* AddServerPresenter.swift in Sources */,
+				9C7507C42513CA2F003C34D6 /* AddServerInteractor.swift in Sources */,
+				9C00F38D2511A28C00EA6770 /* ListServersRouter.swift in Sources */,
+				9C7507BE2513CA2F003C34D6 /* AddServerRouter.swift in Sources */,
+				9C00F38F2511A28C00EA6770 /* ListServersModels.swift in Sources */,
+				9C00F38B2511A28C00EA6770 /* ListServersWorker.swift in Sources */,
+				9C7507BC2513CA2F003C34D6 /* AddServerWorker.swift in Sources */,
+				9C00F3892511A28C00EA6770 /* ListServersPresenter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C00F36A2511A20400EA6770 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C00F3732511A20500EA6770 /* MeReachAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9C00F3652511A20400EA6770 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9C00F3492511A20300EA6770 /* MeReachApp */;
+			targetProxy = 9C00F3642511A20400EA6770 /* PBXContainerItemProxy */;
+		};
+		9C00F3702511A20500EA6770 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9C00F3492511A20300EA6770 /* MeReachApp */;
+			targetProxy = 9C00F36F2511A20500EA6770 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9C00F3532511A20300EA6770 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C00F3542511A20300EA6770 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9C00F35B2511A20400EA6770 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C00F35C2511A20400EA6770 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9C00F3752511A20500EA6770 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9C00F3762511A20500EA6770 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9C00F3782511A20500EA6770 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7FH5Q2A622;
+				INFOPLIST_FILE = MeReachApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.marina.MeReachApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9C00F3792511A20500EA6770 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7FH5Q2A622;
+				INFOPLIST_FILE = MeReachApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.marina.MeReachApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9C00F37B2511A20500EA6770 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7FH5Q2A622;
+				INFOPLIST_FILE = MeReachAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.marina.MeReachAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MeReachApp.app/MeReachApp";
+			};
+			name = Debug;
+		};
+		9C00F37C2511A20500EA6770 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7FH5Q2A622;
+				INFOPLIST_FILE = MeReachAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.marina.MeReachAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MeReachApp.app/MeReachApp";
+			};
+			name = Release;
+		};
+		9C00F37E2511A20500EA6770 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7FH5Q2A622;
+				INFOPLIST_FILE = MeReachAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.marina.MeReachAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MeReachApp;
+			};
+			name = Debug;
+		};
+		9C00F37F2511A20500EA6770 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7FH5Q2A622;
+				INFOPLIST_FILE = MeReachAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.marina.MeReachAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MeReachApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9C00F3452511A20300EA6770 /* Build configuration list for PBXProject "MeReachApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C00F3752511A20500EA6770 /* Debug */,
+				9C00F3762511A20500EA6770 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C00F3772511A20500EA6770 /* Build configuration list for PBXNativeTarget "MeReachApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C00F3782511A20500EA6770 /* Debug */,
+				9C00F3792511A20500EA6770 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C00F37A2511A20500EA6770 /* Build configuration list for PBXNativeTarget "MeReachAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C00F37B2511A20500EA6770 /* Debug */,
+				9C00F37C2511A20500EA6770 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C00F37D2511A20500EA6770 /* Build configuration list for PBXNativeTarget "MeReachAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C00F37E2511A20500EA6770 /* Debug */,
+				9C00F37F2511A20500EA6770 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9C00F3562511A20300EA6770 /* MeReachApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9C00F3572511A20300EA6770 /* MeReachApp.xcdatamodel */,
+			);
+			currentVersion = 9C00F3572511A20300EA6770 /* MeReachApp.xcdatamodel */;
+			path = MeReachApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9C00F3422511A20300EA6770 /* Project object */;
+}
