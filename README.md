@@ -9,6 +9,6 @@ mesmos estão online ou não.
 - Remover servidor
 - Adicionar servidor
 
-Desenvolvido na linguagem Swift utilizando Clean Architecture.
+Desenvolvido na linguagem Swift utilizando Clean Architecture e Core Data para persistência de dados.
 
 
