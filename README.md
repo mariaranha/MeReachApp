@@ -1,14 +1,12 @@
 # MeReach
 
-Aplicação iOS que permite o usuário monitorar uma lista de servidores, mostrando se os
-mesmos estão online ou não.
+iOS application that allows the user to monitor a list of servers, showing whether they are online or not.
 
-## Funcionalidades
+## Features
 
-- Lista de servidores
-- Remover servidor
-- Adicionar servidor
+- Server list
+- Remove server
+- Add server
 
-Desenvolvido na linguagem Swift utilizando Clean Architecture e Core Data para persistência de dados.
-
+Developed in Swift language using Clean Architecture and Core Data for data persistence.
 
